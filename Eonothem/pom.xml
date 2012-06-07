@@ -9,8 +9,8 @@
 	<name>Eonothem</name>
 
 	<modules>
-		<module>../PizzaBPM</module>
-		<module>../PizzaWeb</module>
+		<module>../EonothemBPM</module>
+		<module>../EonothemWeb</module>
 	</modules>
 
 </project>
