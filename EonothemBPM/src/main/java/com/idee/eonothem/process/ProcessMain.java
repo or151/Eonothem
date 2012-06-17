@@ -1,4 +1,4 @@
-package com.sample;
+package com.idee.eonothem.process;
 
 import org.drools.KnowledgeBase;
 import org.drools.builder.KnowledgeBuilder;
@@ -31,7 +31,7 @@ public class ProcessMain {
 
 	private static KnowledgeBase readKnowledgeBase() throws Exception {
 		KnowledgeBuilder knowledgeBuilder = KnowledgeBuilderFactory.newKnowledgeBuilder();
-		knowledgeBuilder.add(ResourceFactory.newClassPathResource("sample.bpmn"), ResourceType.BPMN2);
+		knowledgeBuilder.add(ResourceFactory.newClassPathResource("eonothem.bpmn"), ResourceType.BPMN2);
 		return knowledgeBuilder.newKnowledgeBase();
 	}
 	

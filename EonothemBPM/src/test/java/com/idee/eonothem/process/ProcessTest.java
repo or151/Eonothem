@@ -1,4 +1,4 @@
-package com.sample;
+package com.idee.eonothem.process;
 
 import org.drools.runtime.StatefulKnowledgeSession;
 import org.drools.runtime.process.ProcessInstance;
@@ -6,17 +6,17 @@ import org.jbpm.test.JbpmJUnitTestCase;
 import org.junit.Test;
 
 /**
- * This is a sample file to test a process.
+ * Eonothem process test
  */
 public class ProcessTest extends JbpmJUnitTestCase {
 
 	@Test
 	public void testProcess() {
-		StatefulKnowledgeSession ksession = createKnowledgeSession("sample.bpmn");
-		ProcessInstance processInstance = ksession.startProcess("com.sample.bpmn.hello");
+		StatefulKnowledgeSession ksession = createKnowledgeSession("eonothem.bpmn");
+		ProcessInstance processInstance = ksession.startProcess("com.idee.eonothem.process.eonothem");
 		// check whether the process instance has completed successfully
 		assertProcessInstanceCompleted(processInstance.getId(), ksession);
-		assertNodeTriggered(processInstance.getId(), "StartProcess", "Hello", "EndProcess");
+		assertNodeTriggered(processInstance.getId(), "Start Process", "Collect images");
 	}
 
 }
