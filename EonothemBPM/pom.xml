@@ -5,9 +5,10 @@
 	<artifactId>EonothemBPM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	<name>EonothemBPM</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>	
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.jbpm</groupId>
@@ -21,17 +22,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.drools</groupId>
-			<artifactId>drools-core</artifactId>
-			<version>5.3.1.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
 			<artifactId>knowledge-api</artifactId>
-			<version>5.3.1.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-core</artifactId>
 			<version>5.3.1.Final</version>
 		</dependency>
 		<dependency>
